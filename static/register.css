@@ -31,12 +31,12 @@ body {
     gap: 25px;
 }
 
-/* === ÁREA CENTRAL (El truco para centrar) === */
+/* === ÁREA CENTRAL === */
 .main-content {
-    flex: 1; /* Ocupa todo el alto disponible debajo del header */
+    flex: 1; 
     display: flex;
-    justify-content: center; /* Centrado horizontal */
-    align-items: center;     /* Centrado vertical */
+    justify-content: center; 
+    align-items: center;    
     padding: 20px;
 }
 
@@ -48,7 +48,7 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 100%;
-    max-width: 400px; /* Ancho máximo para que no se estire de más */
+    max-width: 400px; 
 }
 
 .card-container h2 {
@@ -96,7 +96,7 @@ body {
     width: 100%;
     margin-top: 15px;
     padding: 12px;
-    background-color: #333; /* Un color oscuro elegante */
+    background-color: #333; 
     color: white;
     border: none;
     border-radius: 6px;
