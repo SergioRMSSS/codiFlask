@@ -1,3 +1,4 @@
+#ESTE ES UN FICHERO EN EL QUE HE HECHO PRUEBAS PARA DESPUES IMPLEMENTARLAS EN EL LOGIN.PY
 import mysql.connector
 
 mydb = mysql.connector.connect(
