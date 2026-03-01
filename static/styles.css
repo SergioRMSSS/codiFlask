@@ -1,0 +1,225 @@
+/* --- 1. RESET Y BASE --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    line-height: 1.6;
+    color: #555;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid #ddd;
+    margin: 40px 0;
+}
+
+/* --- 2. HEADER --- */
+.top-banner {
+    background-color: #d93838;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.banner-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.btn-about {
+    background-color: white;
+    color: #d93838; /* Usamos el mismo rojo del header para las letras */
+    padding: 6px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-about:hover {
+    background-color: #f4f4f9; /* Un gris muy clarito al pasar el ratón */
+    text-decoration: none;
+}
+
+.btn-header {
+    background-color: white;
+    color: #d93838; /* Letras rojas para contrastar */
+    padding: 6px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-left: 10px; /* Separación entre botones */
+}
+
+.btn-header:hover {
+    background-color: #f4f4f9;
+    text-decoration: none;
+}
+
+/* --- 3. CONTENEDORES PRINCIPALES --- */
+.main-content {
+    flex: 1;
+    display: flex;
+    padding: 40px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Caja de Login/Registro */
+.card-container {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Contenedor del Index (sin fondo, centrado y ancho) */
+.content-container {
+    width: 100%;
+    max-width: 1000px;
+    text-align: left;
+}
+
+/* --- 4. FORMULARIOS Y BOTONES --- */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Añadimos estilo a las etiquetas label */
+.input-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Ahora input y textarea comparten el mismo diseño */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+}
+
+/* Para que el cuadro de texto solo se pueda estirar hacia abajo, no hacia los lados */
+textarea {
+    resize: vertical;
+}
+
+.btn-submit {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.inline-btn {
+    width: auto;
+}
+
+/* Para que el botón del index no ocupe todo el ancho */
+.inline-btn {
+    width: auto;
+}
+
+/* --- 5. SECCIÓN RESUMEN (Index) --- */
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #d93838;
+    margin-bottom: 15px;
+}
+
+/* Flexbox para la imagen y el texto */
+.summary-content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* La imagen ocupa el 45% del espacio */
+.summary-image {
+    flex: 0 0 45%;
+}
+
+.summary-image img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.summary-text-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* --- 6. SECCIÓN ABOUT ME (Descargas) --- */
+.downloads-grid {
+    display: flex;
+    gap: 30px; /* Separación entre los dos recuadros */
+    justify-content: center; /* Centra los recuadros en la pantalla */
+    margin-top: 40px;
+}
+
+.download-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    width: 100%;
+    max-width: 350px; /* Ancho fijo para que ambas cajas sean iguales */
+    text-align: center;
+    background-color: #fff;
+}
+
+.download-card h3 {
+    color: #d93838; /* El mismo rojo de tu header */
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.download-card p {
+    margin-bottom: 25px;
+    font-size: 15px;
+    color: #555;
+}

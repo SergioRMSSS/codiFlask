@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MotoGP</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+</head>
+<body>
+
+    <header class="top-banner">
+        <div class="banner-left">Creado por : Sergio Morales</div>
+        <div class="banner-right">
+            <span>contacto@ejemplo.com</span>
+            <span>+34 600 000 000</span>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="card-container">
+            <h2>Login</h2>
+            <form action="/login" method="POST" class="login-form">
+                <div class="input-group">
+                    <label for="username">Nombre de usuario:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <button type="submit" class="btn btn-login btn-submit">Login</button>
+            </form>
+
+            <p class="register-link">Si no tienes una cuenta <a href="/register">Registrate aqui</a></p>
+        </div>
+    </main>
+
+</body>
+</html>

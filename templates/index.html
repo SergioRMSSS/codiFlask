@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio - Última Carrera{% endblock %}
+
+{% block content %}
+<div class="content-container">
+    
+    <section class="summary-section">
+        <h2>Resumen de la ultima Carrera</h2>
+        
+        <div class="summary-content">
+            
+            <div class="summary-image">
+                <img src="{{ url_for('static', filename='assets/MBZ.jpg') }}" alt="Imagen de la carrera">
+            </div>
+            
+            <div class="summary-text-area">
+                <h3>GP de Tailandia: Aprilia asusta y Pedro Acosta se corona líder en el estreno de 2026</h3>
+                <p>El semáforo se apagó en el Circuito de Chang y, con él, todas las dudas sobre quién dominaría la nueva temporada. Lo que hemos vivido este fin de semana no es solo el inicio de un mundial, sino una declaración de intenciones por parte de Aprilia y la confirmación de que la "era Acosta" ya está aquí.</p>
+                <br><br><br>
+
+                <h4>Bezzecchi estrena el casillero de victorias</h4>
+                <p>La carrera dominical tuvo un nombre propio: Marco Bezzecchi. El italiano, ahora a lomos de la Aprilia oficial, dio un recital de pilotaje y gestión de gomas. Bezzecchi no solo ganó; convenció. Su ritmo fue constante y su capacidad para defenderse en las frenadas del trazado tailandés demostró que la moto de Noale es, ahora mismo, la referencia de la parrilla.</p>
+                <br><br><br>
+                
+                <h4>El drama de Márquez y el golpe de autoridad de Acosta</h4>
+                <p>La nota amarga del día la puso Marc Márquez. El de Cervera estaba peleando en el grupo de cabeza cuando un inoportuno pinchazo lo dejó fuera de combate. Un cero doloroso para un Márquez que parecía tener ritmo de podio.</p>
+                <br>
+                <p>Quien no perdonó fue Pedro Acosta. Tras su imponente victoria en la Sprint del sábado, el murciano supo jugar sus cartas para terminar en una valiosísima segunda posición. Con estos resultados, el "Tiburón" sale de Tailandia como líder sólido del mundial, confirmando que 2026 puede ser su año de gloria.</p>
+                <br><br><br>
+
+                <h4>Aprilia: Tres motos en el Top 4</h4>
+                <p>Si algo ha quedado claro en Chang, es que Aprilia ha dado el salto definitivo para luchar por el título mundial. El podio lo cerró un estratosférico Raúl Fernández, que llevó la moto del equipo satélite al tercer cajón, demostrando que el paquete técnico de la marca funciona en todas las manos.</p>
+                <br>
+                <p>Mención especial merece Jorge Martín. A pesar de arrastrar lesiones que habrían mermado a cualquiera, "Martinator" tiró de orgullo para meter su Aprilia en la cuarta posición, completando un dominio casi absoluto de la marca italiana en los puestos de honor.</p>
+                <br>
+                <a href="/form_resum" class="btn-submit inline-btn">Dejar opinión</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <hr>
+
+    {% block noticias %}
+    <section class="news-section">
+        <h2>ULTIMAS NOTICIAS</h2>
+        <h3>Alerta técnica en MotoGP: Bagnaia, Bastianini y Moreira obligados a cambiar de casco</h3>
+        <p>El arranque de la temporada 2026 en Tailandia ha dejado una imagen inusual en el box de varios equipos punteros. Pilotos de la talla de Pecco Bagnaia, Enea Bastianini y Diogo Moreira se han visto obligados a competir con cascos de marcas distintas a sus patrocinadores habituales debido a la reciente entrada en vigor de una nueva homologación de seguridad de la FIM.</p>
+        <br>
+        <p>Esta normativa, mucho más estricta en cuanto a impactos rotacionales, ha pillado desprevenidos a ciertos fabricantes que aún no han logrado certificar sus modelos actuales. Ante la imposibilidad de usar su equipamiento de siempre por reglamento, los pilotos han tenido que recurrir a cascos de otras marcas adaptados estéticamente a sus colores. Este cambio de última hora no solo afecta a los compromisos publicitarios, sino que supone un desafío técnico para los pilotos, quienes deben adaptarse a una visibilidad y aerodinámica diferentes en plena competición mientras sus marcas trabajan a contrarreloj para obtener el sello oficial.</p>
+    </section>
+    {% endblock %}
+
+</div>
+{% endblock %}

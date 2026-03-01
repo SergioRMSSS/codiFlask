@@ -1,0 +1,128 @@
+/* Reseteo básico y fuente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* El body como columna para poder centrar el contenido principal */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f9; /* Fondo gris claro */
+}
+
+/* === FRANJA SUPERIOR === */
+.top-banner {
+    background-color: #d93838; /* Rojo */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.banner-right {
+    display: flex;
+    gap: 25px;
+}
+
+/* === ÁREA CENTRAL (El truco para centrar) === */
+.main-content {
+    flex: 1; /* Ocupa todo el alto disponible debajo del header */
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;     /* Centrado vertical */
+    padding: 20px;
+}
+
+/* === TARJETA BLANCA (Login y Registro) === */
+.card-container {
+    background-color: white;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px; /* Ancho máximo para que no se estire de más */
+}
+
+.card-container h2 {
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 28px;
+}
+
+/* === ESTILOS DE LOS FORMULARIOS === */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-group label {
+    font-weight: 500;
+    color: #555;
+    font-size: 14px;
+}
+
+.input-group input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* === BOTÓN PRINCIPAL === */
+.btn-submit {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #333; /* Un color oscuro elegante */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #555;
+}
+
+/* === ENLACES INFERIORES === */
+.auth-link {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #666;
+}
+
+.auth-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+}

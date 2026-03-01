@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Dejar Opinión - MotoGP{% endblock %}
+
+{% block content %}
+<div class="card-container" style="max-width: 500px;">
+    <h2>Dejar opinión</h2>
+    
+    <form action="/form_resum" method="POST">
+        
+        <div class="input-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="input-group">
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+        </div>
+        
+        <div class="input-group">
+            <label for="carrera">Título / Carrera:</label>
+            <input type="text" id="carrera" name="carrera" placeholder="Ej: GP de Qatar 2026" required>
+        </div>
+
+        <div class="input-group">
+            <label for="opinion">Tu opinión sobre el resumen:</label>
+            <textarea id="opinion" name="opinion" rows="5" required></textarea>
+        </div>
+        
+        <button type="submit" class="btn-submit">Enviar opinión</button>
+    </form>
+</div>
+{% endblock %}

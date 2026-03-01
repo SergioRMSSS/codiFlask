@@ -1,0 +1,78 @@
+/* Quitamos márgenes por defecto y elegimos una fuente limpia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* === FRANJA SUPERIOR === */
+.top-banner {
+    background-color: #d93838; 
+    color: white;
+    display: flex; /* Flexbox ayuda a separar los elementos a los lados */
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.banner-right {
+    display: flex;
+    gap: 25px; /* Espacio entre el correo y el teléfono */
+}
+
+/* === ÁREA CENTRAL === */
+.main-content {
+    background-color: #f4f4f9; 
+    height: calc(100vh - 45px); 
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;     /* Centrado vertical */
+}
+
+/* === CONTENEDOR DE BOTONES === */
+.button-container {
+    background-color: white;
+    padding: 40px 60px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+}
+
+.button-container h2 {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px; /* Espacio entre los dos botones */
+}
+
+/* === ESTILO DE LOS BOTONES === */
+.btn {
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.3s ease; 
+}
+
+.btn-login {
+    background-color: #ff0000; 
+}
+
+.btn-login:hover {
+    background-color: #b30000;
+}
+
+.btn-register {
+    background-color: #28a745; 
+}
+
+.btn-register:hover {
+    background-color: #1e7e34;
+}

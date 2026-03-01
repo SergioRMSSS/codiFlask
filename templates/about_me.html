@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}About Me - Descargas{% endblock %}
+
+{% block content %}
+<div class="content-container" style="text-align: center;">
+    
+    <h2>Sobre Mí</h2>
+    <p>¡Hola! Soy Sergio Morales. Aquí puedes descargar mis últimos ejercicios que me hicieron aprender a usar Phyton.</p>
+    
+    <div class="downloads-grid">
+        
+        <div class="download-card">
+            <h3>Ejercicio 1</h3>
+            <p>Archivos y recursos del primer proyecto de la web.</p>
+            <a href="{{ url_for('static', filename='ejercicios/EJ_iniciales.zip') }}" class="btn-submit" download>Descargar ZIP 1</a>
+        </div>
+
+        <div class="download-card">
+            <h3>Ejercicio 2</h3>
+            <p>Archivos y recursos del segundo proyecto avanzado.</p>
+            <a href="{{ url_for('static', filename='ejercicios/pruebas_flask.zip') }}" class="btn-submit" download>Descargar ZIP 2</a>
+        </div>
+
+    </div>
+
+</div>
+{% endblock %}
